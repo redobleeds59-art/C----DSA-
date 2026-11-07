@@ -8,11 +8,11 @@ int binary_search(vector<int> &arr,int st,int end , int target){
      return mid;
    }else if(arr[mid]<target){
       st=mid+1;
-      binary_search(arr,st,end,target);
+     return binary_search(arr,st,end,target);
    }
    else{
     end=mid-1;
-    binary_search(arr,st,end,target);
+   return binary_search(arr,st,end,target);
    }
 }
 
